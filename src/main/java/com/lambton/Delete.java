@@ -2,12 +2,13 @@ package com.lambton;
 
 public class Delete {
     public static void main(String[] args) {
-        String str[]=new String[]{"australia","canada"};
-        String str1[]=new String[2];
+        String str[]=new String[]{"australia","canada","india"};
+        String str1[]=new String[3];
         int length=str.length;
         for(int i=0;i<length;i++){
+
             char ch[]=str[i].toCharArray();
-            char b[]=new char[length];
+            char b[]=new char[str[i].length()];
             int k=0;
             for(int j=0;j<ch.length;j++)
             {
@@ -17,6 +18,7 @@ public class Delete {
                     {
                         b[k]=ch[j];
                         ++k;
+
                     }
                     else
                         continue;
@@ -25,9 +27,9 @@ public class Delete {
             }
             str1[i]=new String(b);
         }
-        for(int i=0;i<2;i++)
+        for(int i=0;i<3;i++)
         {
-            System.out.println(str1[i]);
+            System.out.println(str1[j]);
         }
     }
 }
